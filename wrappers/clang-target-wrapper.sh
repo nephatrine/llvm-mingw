@@ -38,6 +38,7 @@ esac
 case $ARCH in
 i686)
     # Dwarf is the default for i686.
+    FLAGS="$FLAGS -mmmx -msse -msse2"
     ;;
 x86_64)
     # SEH is the default for x86_64.
